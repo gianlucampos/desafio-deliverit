@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Temporal;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 /**
  *
@@ -23,14 +25,18 @@ public class Conta implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seqconta")
     private Long id;
     @Column
+    @NotBlank(message = "Nome não pode ser nulo")
     private String nome;
     @Column
     @Temporal(javax.persistence.TemporalType.DATE)
+    @NotNull(message = "Data de Vencimento não pode ser nula")
     private Date dtVencimento;
     @Column
     @Temporal(javax.persistence.TemporalType.DATE)
+    @NotNull(message = "Data de Pagamento não pode ser nula")
     private Date dtPagamento;
     @Column
+    @NotNull(message = "Valor original não pode ser nulo")
     private BigDecimal valorOriginal;
     @Column
     private BigDecimal valorCorrigido;
