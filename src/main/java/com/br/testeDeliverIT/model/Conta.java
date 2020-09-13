@@ -41,7 +41,7 @@ public class Conta implements Serializable {
     @Column
     private BigDecimal valorCorrigido;
     @Column
-    private Integer diasAtraso;
+    private Integer diasAtraso = 0;
 
     public Long getId() {
         return id;
