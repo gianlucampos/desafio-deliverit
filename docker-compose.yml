@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  db:
+    image: "postgres:9.6-alpine"
+    container_name: "postgresqldb"
+    volumes: 
+      - postgresql-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:      
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=teste12
+      - POSTGRES_DB=crudGenerico
+
+  app:
+    image: teste-deliver-it
+    ports:
+      - "8082:8082"
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+
+volumes: 
+  postgresql-data:
