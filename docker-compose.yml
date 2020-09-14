@@ -7,7 +7,7 @@ services:
     volumes: 
       - postgresql-data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5000:5432"
     environment:      
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=teste12
@@ -20,6 +20,8 @@ services:
     build: 
       context: ./
       dockerfile: Dockerfile
+    environment: 
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/crudGenerico
     depends_on:
       - db
 
