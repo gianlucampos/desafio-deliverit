@@ -22,7 +22,7 @@ public class JurosMulta {
 
         private final double valorMulta;
         private final double valorJuros;
-        private int dias;
+        private int dias = 0;
 
         private Atraso(double valorMulta, double valorJuros) {
             this.valorMulta = valorMulta;
@@ -65,11 +65,11 @@ public class JurosMulta {
     }
 
     private Atraso calculaAtraso(Integer diasAtraso) {
-        Atraso atraso = Atraso.ATE_CINCO_DIAS;
         if (diasAtraso <= 0) {
-            atraso = Atraso.SEM_ATRASO;
-            atraso.setDias(0);
-        } else if (diasAtraso <= 3) {
+            return Atraso.SEM_ATRASO;
+        }
+        Atraso atraso = Atraso.ATE_CINCO_DIAS;
+        if (diasAtraso <= 3) {
             atraso = Atraso.ATE_TRES_DIAS;
         } else if (diasAtraso > 5) {
             atraso = Atraso.SUPERIOR_CINCO_DIAS;
