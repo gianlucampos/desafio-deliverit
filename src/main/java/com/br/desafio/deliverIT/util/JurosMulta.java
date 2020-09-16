@@ -1,6 +1,6 @@
-package com.br.testeDeliverIT.util;
+package com.br.desafio.deliverIT.util;
 
-import com.br.testeDeliverIT.model.Conta;
+import com.br.desafio.deliverIT.model.Conta;
 import java.math.BigDecimal;
 import java.time.temporal.ChronoUnit;
 
@@ -10,7 +10,7 @@ import java.time.temporal.ChronoUnit;
  * <br> Superior 3 dias |3% multa |Juros por dia 0,2%
  * <br> Superior 5 dias |5% multa |Juros por dia 0,3%
  *
- * @author Gianluca
+ * @author gianlucampos
  */
 public class JurosMulta {
 

@@ -6,6 +6,6 @@ COPY src /workspace/src
 RUN mvn clean install -DskipTests
 
 FROM openjdk:8-alpine
-COPY --from=build /workspace/target/*.jar testeDeliverIT.jar
+COPY --from=build /workspace/target/*.jar desafioDeliverIT.jar
 EXPOSE 8082
-ENTRYPOINT ["java","-jar","testeDeliverIT.jar"]
+ENTRYPOINT ["java","-jar","desafioDeliverIT.jar"]

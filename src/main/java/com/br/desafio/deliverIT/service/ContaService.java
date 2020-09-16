@@ -1,8 +1,8 @@
-package com.br.testeDeliverIT.service;
+package com.br.desafio.deliverIT.service;
 
-import com.br.testeDeliverIT.model.Conta;
-import com.br.testeDeliverIT.repository.ContaRepository;
-import com.br.testeDeliverIT.util.JurosMulta;
+import com.br.desafio.deliverIT.model.Conta;
+import com.br.desafio.deliverIT.repository.ContaRepository;
+import com.br.desafio.deliverIT.util.JurosMulta;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

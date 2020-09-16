@@ -11,9 +11,9 @@ services:
     ports:
       - "5000:5432"
     environment:      
-      - POSTGRES_USER=postgres
+      - POSTGRES_DB=contabilidade
+      - POSTGRES_USER=gerente
       - POSTGRES_PASSWORD=teste12
-      - POSTGRES_DB=crudGenerico
 
   app:
     image: app
@@ -24,7 +24,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     environment: 
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/crudGenerico
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/contabilidade
     depends_on:
       - db
 

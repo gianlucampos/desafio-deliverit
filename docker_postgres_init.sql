@@ -1,9 +1,9 @@
--- CREATE USER gianluca WITH PASSWORD 'teste12' CREATEDB;
+CREATE USER gerente WITH PASSWORD 'teste12' CREATEDB;
 
-CREATE DATABASE crudGenerico
-    WITH OWNER = postgres
+CREATE DATABASE contabilidade
+    WITH OWNER = gerente
     ENCODING = 'UTF8'
-    LC_COLLATE = 'pt_BR.utf8'
-    LC_CTYPE = 'pt_BR.utf8'
+    LC_COLLATE = 'en_US.utf8'
+    LC_CTYPE = 'en_US.utf8'
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;"

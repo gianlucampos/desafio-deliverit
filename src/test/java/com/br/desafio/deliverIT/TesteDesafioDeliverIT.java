@@ -1,10 +1,14 @@
-package com.br.testeDeliverIT;
+package com.br.desafio.deliverIT;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+/**
+ *
+ * @author gianlucampos
+ */
 @SpringBootTest
-class TesteDeliverItApplicationTests {
+public class TesteDesafioDeliverIT {
 
     @Test
     void contextLoads() {

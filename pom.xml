@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.br.testeDeliverIT</groupId>
-    <artifactId>teste-deliverIT</artifactId>
+    <artifactId>desafio-deliverIT</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>teste-deliverIT</name>
+    <name>desafio-deliverIT</name>
     <description>Teste pratico Deliver IT</description>
 
     <properties>        
@@ -106,7 +106,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.br.testeDeliverIT.TesteDeliverItApplication</mainClass>
+                    <mainClass>com.br.desafio.deliverIT.DesafioDeliverItApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -117,7 +117,7 @@
                 </executions>
             </plugin>
         </plugins>
-        <finalName>testeDeliverIT</finalName>
+        <finalName>desafioDeliverIT</finalName>
     </build>
 
 </project>

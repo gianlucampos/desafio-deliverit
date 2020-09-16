@@ -1,4 +1,4 @@
-package com.br.testeDeliverIT.model;
+package com.br.desafio.deliverIT.model;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
  *
  * @author gianlucampos
  */
-@Entity(name = "Conta")
+@Entity
 public class Conta implements Serializable {
 
     @Id

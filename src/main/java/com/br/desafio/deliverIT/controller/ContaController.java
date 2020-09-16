@@ -1,7 +1,7 @@
-package com.br.testeDeliverIT.controller;
+package com.br.desafio.deliverIT.controller;
 
-import com.br.testeDeliverIT.model.Conta;
-import com.br.testeDeliverIT.service.ContaService;
+import com.br.desafio.deliverIT.model.Conta;
+import com.br.desafio.deliverIT.service.ContaService;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

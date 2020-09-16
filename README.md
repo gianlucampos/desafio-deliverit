@@ -30,7 +30,7 @@ Nos ambientes *Windows* e *Mac* já são instalados juntos com o Docker, para Li
 Para subir aplicação:
 
 ```
-$ docker-compose up 
+$ docker-compose up -d
 ```
 
 Para parar aplicação:

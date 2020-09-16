@@ -1,6 +1,6 @@
-package com.br.testeDeliverIT.repository;
+package com.br.desafio.deliverIT.repository;
 
-import com.br.testeDeliverIT.model.Conta;
+import com.br.desafio.deliverIT.model.Conta;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
